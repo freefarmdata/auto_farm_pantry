@@ -6,11 +6,12 @@ const compression = require('compression');
 const config = require('config');
 const protos = require('auto_farm_protos');
 const services = require('./services');
+const influx = require('./clients/influx');
+
+protos.initialize();
 
 const port = config.get('PORT');
 const app = express();
-
-protos.initialize();
 
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));

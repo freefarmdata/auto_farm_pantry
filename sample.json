@@ -1,0 +1,65 @@
+{
+  "status": {
+    "software": 1,
+    "version": 1,
+    "id": "test",
+    "url": "0.0.0.0:5656",
+    "cameras": 0,
+    "halted": false,
+    "debug": true,
+    "soilCalibrating": false,
+    "currentTemp": {
+      "temp": 777,
+      "time": 1589090822
+    },
+    "currentHumid": {
+      "humid": 777,
+      "time": 1589090822
+    },
+    "piStats": {
+      "piTemp": 37,
+      "piVolts": 4.825000286102295,
+      "upTime": 69,
+      "time": 1589090823
+    },
+    "currentSoil": [{
+      "reading": 888,
+      "time": 1589090822,
+      "pin": 0,
+      "median": 888,
+      "standardDev": 4.524010181427002
+    }, {
+      "reading": 911,
+      "time": 1589090822,
+      "pin": 1,
+      "median": 911,
+      "standardDev": 3.77138352394104
+    }, {
+      "reading": 848,
+      "time": 1589090822,
+      "pin": 2,
+      "median": 847,
+      "standardDev": 5.190267562866211
+    }],
+    "alarms": [{
+      "time": 1589090822,
+      "title": "No Temperature Sensors",
+      "severity": 3,
+      "text": "No temperature sensors detected"
+    }, {
+      "time": 1589090822,
+      "title": "Humidity Sensor",
+      "severity": 2,
+      "text": "Failed to Read Sensor: dht11 failed"
+    }]
+  },
+  "modifiers": {
+    "reboot": false,
+    "halt": false,
+    "calibrateSoil": false,
+    "imageInterval": 30,
+    "morningTime": 5,
+    "nightTime": 20,
+    "camerasEnabled": true
+  }
+}
