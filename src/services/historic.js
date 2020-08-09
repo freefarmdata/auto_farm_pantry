@@ -1,9 +1,5 @@
-const route = require('express').Router();
+function buildState(req, res) {
+  return res.status(501).end();
+}
 
-route.post('/', function(req, res) {
-  const { data, type } = req.body;
-
-  return res.status(200).send();
-});
-
-module.exports = route;
+module.exports = [buildState];
